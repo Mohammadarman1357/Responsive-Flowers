@@ -322,6 +322,9 @@ body {
         padding: 25px 30px;
     }
 
+    .badge{
+        display: none;
+    }
     .plant-lover-container {
         flex-direction: column;
         margin: 0px 16px;
