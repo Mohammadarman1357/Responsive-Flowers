@@ -222,11 +222,22 @@ body {
     justify-content: center;
 }
 
+/* trusted plant lover badge section*/
+.badge {
+    width: 286px;
+    height: 286px;
+    position: relative;
+    margin: 83px 657px -159px 497px;
+}
 
+.badge img {
+    width: 100%;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
 
 /* plant lover section styles */
 .plant-lover-container {
-    margin: 210px 150px 133px;
+    margin: 0px 150px 133px;
     align-items: center;
     justify-content: center;
     gap: 60px;
