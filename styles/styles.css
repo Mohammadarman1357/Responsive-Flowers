@@ -6,12 +6,13 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 .noto-serif-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 body {
@@ -29,11 +30,16 @@ body {
 
 }
 
-.text-black{
+.text-black {
     color: #252432;
 }
-.text-gray{
+
+.text-gray {
     color: #8987A1;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* header styles */
@@ -53,26 +59,36 @@ body {
     list-style: none;
 }
 
+.nav-content ul li a:hover {
+    color: #E95A08;
+}
+
 .nav-content ul li a {
     text-decoration: none;
 }
-.home{
+
+.home {
     font-weight: bold;
     font-size: 1rem;
     color: #252432;
 }
-.shop, .about{
+
+.shop,
+.about {
     font-size: 1rem;
     color: #8987A1;
 }
-.cart{
+
+.cart {
     font-size: 1rem;
     color: #000000;
 }
-.carts{
+
+.carts {
     align-items: center;
     gap: 10px;
 }
+
 .nav-content ul li img {
     width: 24px;
     height: 24px;
@@ -84,44 +100,189 @@ body {
     align-items: flex-end;
 }
 
-.banner-title{
+.banner-title {
     font-size: 4.06rem;
     font-weight: bold;
     color: #000000;
     margin: 0px;
 }
-.banner-description{
+
+.banner-description {
     font-size: 1.37rem;
     color: rgba(0, 0, 0, 0.5);
     margin: 13px 0px 0px;
 }
-#banner-sub-title{
+
+#banner-sub-title {
     color: #E95A08;
+}
+
+/* plant section styles */
+.plant-container {
+    margin: 0px 150px 84px;
+}
+
+.plant-head {
+    padding: 0px 126px;
+}
+
+.plant-container-title {
+    font-weight: bold;
+    font-size: 3.12rem;
+    color: #000000;
+    margin: 0px;
+}
+
+#plant-container-subtitle {
+    color: #E95A08;
+}
+
+.plant-container-description {
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 16px 0px 0px;
+}
+
+.plant-content img {
+    width: 100%;
+}
+
+.plant-title,
+.plant-price {
+    font-size: 1.37rem;
+    font-weight: 500;
+    color: #111111;
+    margin: 0px;
+}
+
+.plant-title {
+    margin-top: 30px;
+}
+
+.plant-price {
+    font-weight: bold;
+    margin: 20px 0px 30px;
+}
+
+.cart-btn {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    border: none;
+    padding: 19px 50px;
+    margin: 0px;
+    width: 100%;
+}
+
+.cart-btn:hover {
+    background-color: green;
+}
+
+.plant-1 {
+    grid-area: plant-1;
+}
+
+.plant-2 {
+    grid-area: plant-2;
+}
+
+.plant-3 {
+    grid-area: plant-3;
+}
+
+.plant-4 {
+    grid-area: plant-4;
+}
+
+.plant-5 {
+    grid-area: plant-5;
+}
+
+.plant-6 {
+    grid-area: plant-6;
+}
+
+.plant-7 {
+    grid-area: plant-7;
+}
+
+.plant-8 {
+    grid-area: plant-8;
+}
+
+.plant {
+    display: grid;
+    grid-template-areas:
+        "plant-1 plant-2 plant-3 plant-4"
+        "plant-5 plant-6 plant-7 plant-8"
+    ;
+    gap: 30px 20px;
+    margin-top: 50px;
+    justify-content: center;
 }
 
 /* responsive styles */
 /* mobile responsive */
 @media screen and (max-width:576px) {
- 
-    .home, .shop, .about{
+
+    .home,
+    .shop,
+    .about {
         display: none;
     }
 
-    .nav-container{
+    .nav-container {
         margin: 14px 16px;
     }
-    .nav-container img{
+
+    .nav-container img {
         width: 63px;
         height: 38px;
-    }   
-    .banner-container{
+    }
+
+    .banner-container {
         flex-direction: column-reverse;
         margin: 0px;
     }
-    .banner-image{
+
+    .banner-image {
         margin: 28px 0px;
     }
-    .banner-content{
+
+    .banner-content {
         margin: 0px 16px 65px;
+    }
+
+    .plant-container {
+        margin: 0px 15px 42px;
+    }
+
+    .plant-head {
+        padding: 0px 28px;
+    }
+
+    .plant-content img {
+        width: 100%;
+    }
+
+    .plant {
+        grid-template-areas:
+            "plant-1 plant-2"
+            "plant-3 plant-4"
+            "plant-5 plant-6"
+            "plant-7 plant-8"
+        ;
+        gap: 30px 20px;
+        margin-top: 28px;
+        justify-content: center;
+    }
+
+    .plant-price {
+        margin: 10px 0px 30px;
+    }
+
+    .cart-btn {
+        padding: 25px 30px;
     }
 }
