@@ -493,7 +493,7 @@ body {
 
     .plant-lover-container {
         flex-direction: column;
-        margin: 0px 16px;
+        margin: 0px 16px 40px;
         gap: 0px;
     }
 
