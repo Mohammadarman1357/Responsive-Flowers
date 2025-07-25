@@ -126,18 +126,21 @@ body {
     padding: 0px 126px;
 }
 
-.plant-container-title {
+.plant-container-title,
+.deal-title {
     font-weight: bold;
     font-size: 3.12rem;
     color: #000000;
     margin: 0px;
 }
 
-#plant-container-subtitle {
+#plant-container-subtitle,
+.deal-sub {
     color: #E95A08;
 }
 
-.plant-container-description {
+.plant-container-description,
+.deal-description {
     font-size: 1.37rem;
     color: rgba(0, 0, 0, 0.5);
     margin: 16px 0px 0px;
@@ -258,26 +261,108 @@ body {
     margin-top: 20px;
 }
 
+/* latest deal styles */
+.deal-container {
+    margin: 0px 150px 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal-head {
+    margin: 0px 126px 120px;
+}
+
+.deal-content-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deal-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.deal-content-1 {
+    background-image: url(../assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    padding: 65px 70px;
+    margin: 0px;
+}
+
+.deal-content-2 {
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    padding: 65px 70px;
+    margin: 0px;
+}
+
+.deal-content-3 {
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    padding: 140px 120px 112px;
+    margin: 0px;
+}
+
+.content-title-1,
+.content-title-2 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.content-title-3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.shop-btn {
+    background: none;
+    padding: 20px 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    margin: 0px;
+}
+
+.shop-btn-zabo {
+    font-size: 1.75rem;
+}
+
+.shop-btn a {
+    color: #FFFFFF;
+}
+
 /* join section styles */
-.join-container{
+.join-container {
     background-image: url(../assets/news-letter-bg.png);
     padding: 199px 305px 193px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.join-title{
+.join-title {
     font-weight: bold;
     font-size: 3.12rem;
     color: #FFFFFF;
     margin: 0px;
 }
-.join-link{
+
+.join-link {
     margin-top: 23px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
-.join-email{
+
+.join-email {
     grid-column: span 6;
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.5);
@@ -285,7 +370,8 @@ body {
     border: none;
     outline: none;
 }
-.join-btn{
+
+.join-btn {
     font-weight: 600;
     font-size: 1rem;
     color: #FFFFFF;
@@ -293,16 +379,50 @@ body {
     padding: 26px 50px;
     border: none;
 }
-.join-btn:hover{
+
+.join-btn:hover {
     background-color: green;
 
 }
 
 /* footer styles */
-.footer{
+.footer {
     padding: 50px 160px;
-    justify-content: space-between;
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
+
+.footer-logo-description {
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.footer-link ul {
+    display: grid;
+    row-gap: 32px;
+    margin: 0px;
+}
+
+.footer-link ul li {
+    list-style: none;
+}
+
+.footer-link ul li a {
+    text-decoration: none;
+    color: #6B7280;
+    font-size: 1rem;
+}
+
+.footer-site {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-items: center;
+}
+
 /* responsive styles */
 /* mobile responsive */
 @media screen and (max-width:576px) {
@@ -367,9 +487,10 @@ body {
         padding: 25px 30px;
     }
 
-    .badge{
+    .badge {
         display: none;
     }
+
     .plant-lover-container {
         flex-direction: column;
         margin: 0px 16px;
@@ -383,13 +504,72 @@ body {
     .plant-lover-content {
         margin-top: 18px;
     }
-    .plant-lover-list{
+
+    .plant-lover-list {
         margin-top: 16px;
     }
-    .join-container{
+
+    .deal-container {
+        flex-direction: column;
+        margin: 0px 16px 40px;
+    }
+
+    .deal-head {
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+
+    .deal-content-container {
+        flex-direction: column;
+    }
+
+    .deal-content-left {
+        gap: 0px;
+    }
+
+    .deal-content-2{
+        margin-top: 20px;
+    }
+    .deal-content-3 {
+        padding: 65px 75px;
+        margin-top: 20px;
+    }
+
+    .content-title-3 {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+        margin: 0px;
+    }
+
+    .shop-btn-zabo {
+        font-size: 1rem;
+    }
+
+    .join-container {
         padding: 110px 36px 64px;
     }
-    .join-title{
+
+    .join-title {
         font-size: 1.25rem;
+    }
+
+    .footer {
+        padding: 50px 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-link {
+        flex-direction: column;
+        justify-self: left;
+    }
+
+    .footer-link ul {
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+
+    .footer-site {
+        justify-self: left;
     }
 }
